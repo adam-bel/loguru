@@ -25,15 +25,12 @@ def _loguru_datetime_formatter(is_utc, format_string, formatters, dt):
 
 
 def _default_datetime_formatter(dt):
-    return "%04d-%02d-%02d %02d:%02d:%02d.%03d %s" % (
-        dt.year,
-        dt.month,
-        dt.day,
+    return "%02d:%02d:%02d.%03d" % (# %s
         dt.hour,
         dt.minute,
         dt.second,
         dt.microsecond // 1000,
-        _format_timezone(dt, sep=":"),
+        #_format_timezone(dt, sep=":"),
     )
 
 

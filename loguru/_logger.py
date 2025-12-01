@@ -159,16 +159,16 @@ class Core:
                 _defaults.LOGURU_DEBUG_ICON,
             ),
             Level(
-                "INFO",
-                _defaults.LOGURU_INFO_NO,
-                _defaults.LOGURU_INFO_COLOR,
-                _defaults.LOGURU_INFO_ICON,
-            ),
-            Level(
                 "DETAIL",
                 _defaults.LOGURU_DETAIL_NO,
                 _defaults.LOGURU_DETAIL_COLOR,
                 _defaults.LOGURU_DETAIL_ICON,
+            ),
+            Level(
+                "INFO",
+                _defaults.LOGURU_INFO_NO,
+                _defaults.LOGURU_INFO_COLOR,
+                _defaults.LOGURU_INFO_ICON,
             ),
             Level(
                 "SUCCESS",
@@ -177,10 +177,10 @@ class Core:
                 _defaults.LOGURU_SUCCESS_ICON,
             ),
             Level(
-                "NOTIFICATION",
-                _defaults.LOGURU_NOTIFICATION_NO,
-                _defaults.LOGURU_NOTIFICATION_COLOR,
-                _defaults.LOGURU_NOTIFICATION_ICON,
+                "NOTE",
+                _defaults.LOGURU_NOTE_NO,
+                _defaults.LOGURU_NOTE_COLOR,
+                _defaults.LOGURU_NOTE_ICON,
             ),
             Level(
                 "WARNING",
@@ -2195,9 +2195,9 @@ class Logger:
         r"""Log ``message.format(*args, **kwargs)`` with severity ``'SUCCESS'``."""
         __self._log("SUCCESS", False, __self._options, __message, args, kwargs)
 
-    def notification(__self, __message, *args, **kwargs):  # noqa: N805
+    def note(__self, __message, *args, **kwargs):  # noqa: N805
         r"""Log ``message.format(*args, **kwargs)`` with severity ``'WARNING'``."""
-        __self._log("NOTIFICATION", False, __self._options, __message, args, kwargs)
+        __self._log("NOTE", False, __self._options, __message, args, kwargs)
 
     def warning(__self, __message, *args, **kwargs):  # noqa: N805
         r"""Log ``message.format(*args, **kwargs)`` with severity ``'WARNING'``."""

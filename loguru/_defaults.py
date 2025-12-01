@@ -54,21 +54,21 @@ LOGURU_DEBUG_NO = env("LOGURU_DEBUG_NO", int, 10)
 LOGURU_DEBUG_COLOR = env("LOGURU_DEBUG_COLOR", str, "<yellow><bold>")
 LOGURU_DEBUG_ICON = env("LOGURU_DEBUG_ICON", str, "\U0001f41e")  # Lady Beetle
 
-LOGURU_INFO_NO = env("LOGURU_INFO_NO", int, 20)
-LOGURU_INFO_COLOR = env("LOGURU_INFO_COLOR", str, "<bold>")
-LOGURU_INFO_ICON = env("LOGURU_INFO_ICON", str, "\u2139\ufe0f")  # Information
-
-LOGURU_DETAIL_NO = env("LOGURU_INFO_NO", int, 25)
+LOGURU_DETAIL_NO = env("LOGURU_INFO_NO", int, 20)
 LOGURU_DETAIL_COLOR = env("LOGURU_INFO_COLOR", str, "<dim>")
 LOGURU_DETAIL_ICON = env("LOGURU_INFO_ICON", str, "\u2139\ufe0f")  # Secondary Information
+
+LOGURU_INFO_NO = env("LOGURU_INFO_NO", int, 25)
+LOGURU_INFO_COLOR = env("LOGURU_INFO_COLOR", str, "<bold>")
+LOGURU_INFO_ICON = env("LOGURU_INFO_ICON", str, "\u2139\ufe0f")  # Information
 
 LOGURU_SUCCESS_NO = env("LOGURU_SUCCESS_NO", int, 30)
 LOGURU_SUCCESS_COLOR = env("LOGURU_SUCCESS_COLOR", str, "<green><bold>")
 LOGURU_SUCCESS_ICON = env("LOGURU_SUCCESS_ICON", str, "\u2705")  # White Heavy Check Mark
 
-LOGURU_NOTIFICATION_NO = env("LOGURU_WARNING_NO", int, 35)
-LOGURU_NOTIFICATION_COLOR = env("LOGURU_WARNING_COLOR", str, "<blink>")
-LOGURU_NOTIFICATION_ICON = env("LOGURU_WARNING_ICON", str, "\u26a0\ufe0f")  # Warning
+LOGURU_NOTE_NO = env("LOGURU_WARNING_NO", int, 35)
+LOGURU_NOTE_COLOR = env("LOGURU_WARNING_COLOR", str, "<light-blue>")
+LOGURU_NOTE_ICON = env("LOGURU_WARNING_ICON", str, "\u26a0\ufe0f")  # Note
 
 LOGURU_WARNING_NO = env("LOGURU_WARNING_NO", int, 40)
 LOGURU_WARNING_COLOR = env("LOGURU_WARNING_COLOR", str, "<magenta><bold>")

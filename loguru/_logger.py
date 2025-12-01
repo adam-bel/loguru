@@ -165,6 +165,12 @@ class Core:
                 _defaults.LOGURU_INFO_ICON,
             ),
             Level(
+                "DETAIL",
+                _defaults.LOGURU_DETAIL_NO,
+                _defaults.LOGURU_DETAIL_COLOR,
+                _defaults.LOGURU_DETAIL_ICON,
+            ),
+            Level(
                 "SUCCESS",
                 _defaults.LOGURU_SUCCESS_NO,
                 _defaults.LOGURU_SUCCESS_COLOR,
@@ -2174,6 +2180,10 @@ class Logger:
     def info(__self, __message, *args, **kwargs):  # noqa: N805
         r"""Log ``message.format(*args, **kwargs)`` with severity ``'INFO'``."""
         __self._log("INFO", False, __self._options, __message, args, kwargs)
+
+    def detail(__self, __message, *args, **kwargs):  # noqa: N805
+        r"""Log ``message.format(*args, **kwargs)`` with severity ``'INFO'``."""
+        __self._log("DETAIL", False, __self._options, __message, args, kwargs)
 
     def success(__self, __message, *args, **kwargs):  # noqa: N805
         r"""Log ``message.format(*args, **kwargs)`` with severity ``'SUCCESS'``."""

@@ -177,6 +177,12 @@ class Core:
                 _defaults.LOGURU_SUCCESS_ICON,
             ),
             Level(
+                "NOTIFICATION",
+                _defaults.LOGURU_NOTIFICATION_NO,
+                _defaults.LOGURU_NOTIFICATION_COLOR,
+                _defaults.LOGURU_NOTIFICATION_ICON,
+            ),
+            Level(
                 "WARNING",
                 _defaults.LOGURU_WARNING_NO,
                 _defaults.LOGURU_WARNING_COLOR,
@@ -2188,6 +2194,10 @@ class Logger:
     def success(__self, __message, *args, **kwargs):  # noqa: N805
         r"""Log ``message.format(*args, **kwargs)`` with severity ``'SUCCESS'``."""
         __self._log("SUCCESS", False, __self._options, __message, args, kwargs)
+
+    def notification(__self, __message, *args, **kwargs):  # noqa: N805
+        r"""Log ``message.format(*args, **kwargs)`` with severity ``'WARNING'``."""
+        __self._log("NOTIFICATION", False, __self._options, __message, args, kwargs)
 
     def warning(__self, __message, *args, **kwargs):  # noqa: N805
         r"""Log ``message.format(*args, **kwargs)`` with severity ``'WARNING'``."""

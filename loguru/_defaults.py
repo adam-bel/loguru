@@ -46,11 +46,11 @@ LOGURU_ENQUEUE = env("LOGURU_ENQUEUE", bool, False)
 LOGURU_CONTEXT = env("LOGURU_CONTEXT", str, None)
 LOGURU_CATCH = env("LOGURU_CATCH", bool, True)
 
-LOGURU_TRACE_NO = env("LOGURU_TRACE_NO", int, 5)
+LOGURU_TRACE_NO = env("LOGURU_TRACE_NO", int, 10)
 LOGURU_TRACE_COLOR = env("LOGURU_TRACE_COLOR", str, "<cyan><bold>")
 LOGURU_TRACE_ICON = env("LOGURU_TRACE_ICON", str, "\u270f\ufe0f")  # Pencil
 
-LOGURU_DEBUG_NO = env("LOGURU_DEBUG_NO", int, 10)
+LOGURU_DEBUG_NO = env("LOGURU_DEBUG_NO", int, 15)
 LOGURU_DEBUG_COLOR = env("LOGURU_DEBUG_COLOR", str, "<yellow><bold>")
 LOGURU_DEBUG_ICON = env("LOGURU_DEBUG_ICON", str, "\U0001f41e")  # Lady Beetle
 

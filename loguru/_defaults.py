@@ -59,7 +59,7 @@ LOGURU_INFO_COLOR = env("LOGURU_INFO_COLOR", str, "<bold>")
 LOGURU_INFO_ICON = env("LOGURU_INFO_ICON", str, "\u2139\ufe0f")  # Information
 
 LOGURU_DETAIL_NO = env("LOGURU_INFO_NO", int, 25)
-LOGURU_DETAIL_COLOR = env("LOGURU_INFO_COLOR", str, "<underline>")
+LOGURU_DETAIL_COLOR = env("LOGURU_INFO_COLOR", str, "<dim>")
 LOGURU_DETAIL_ICON = env("LOGURU_INFO_ICON", str, "\u2139\ufe0f")  # Secondary Information
 
 LOGURU_SUCCESS_NO = env("LOGURU_SUCCESS_NO", int, 30)
